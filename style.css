@@ -11,14 +11,17 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 #game {
     height: 75%;
     width: 75%;
-    background-color: darkblue;
+    background-color: #34b4eb;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+    border-radius: 10px;
+    overflow: hidden;
 
 }
 #player {
@@ -31,12 +34,25 @@ html, body {
 
 #object {
     height: 10%;
-    width: 7%;
-    background-color: white;
+    width: 10%;
+
     position: relative;
+}
+
+.obAn1 {
     animation: object 1.5s infinite linear;
-
-
+}
+.obAn2 {
+    animation: object 1.25s infinite linear;
+}
+.obAn3 {
+    animation: object 1s infinite linear;
+}
+.obAn4 {
+    animation: object 0.75s infinite linear;
+}
+.obAn5 {
+    animation: object 0.5s infinite linear;
 }
 
 .animate {
@@ -53,4 +69,8 @@ html, body {
     0%{right: 0%;}
     100%{right: 100%;}
 
+}
+#score {
+    font-size: 600%;
+    color: white;
 }
