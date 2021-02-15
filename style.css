@@ -12,6 +12,21 @@ html, body {
     background-color: #ff0000;
     border-radius: 5px;
 }
+#reset:hover {
+    height: 50px;
+    width: 150px;
+    background-color: #ff0000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#reset:active {
+    height: 45px;
+    width: 145px;
+    background-color: #ff0000;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
 
 #res_text {
     color: white;
@@ -48,6 +63,14 @@ html, body {
     background-color: white;
     position: relative;
 
+}
+
+#btnCont {
+    height: 50px;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #object {
