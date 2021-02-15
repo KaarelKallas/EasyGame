@@ -2,7 +2,10 @@ var player = document.getElementById("player");
 var object = document.getElementById("object");
 object.classList.add("obAn1");
 
-
+document.getElementById('reset').addEventListener('click', resetFunction)
+function resetFunction() {
+    localStorage.highScore = 0
+}
 function jump() {
     if (player.classList != "animate") {
         player.classList.add("animate");
@@ -22,6 +25,7 @@ var checkDead = setInterval(function () {
     if (objectRight < 80 && objectRight > 0 && playerBottom <= 10) {
         var ded = true
         var highScore = document.getElementById("hs").innerHTML;
+
         if (parseInt(highScore) < parseInt(scoreInt)) {
             localStorage.highScore = parseInt(scoreInt)
         }
